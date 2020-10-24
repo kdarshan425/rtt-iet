@@ -1,0 +1,1223 @@
+
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+p,h1,h2,h3,h5,h6{
+    font-family: 'Raleway', sans-serif;
+}
+
+/*NAV*/
+/* Top Nav*/
+.topnav {
+    padding-top: 0px;
+    background-color:#ffc000;
+  width: 100%;
+  position: fixed;
+  
+  box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.1);
+  color: white;
+  overflow: hidden;
+  height: 60px;
+  top: 0;
+  z-index: 100;  
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 90;
+  background:#ffc000;
+  transition: ease-in-out all 0.4s;
+  border-bottom: 1px solid black;
+  box-shadow: rgba(0, 0, 0, 0.6);
+  
+}
+
+a:hover{
+    background: #ffc000;
+    transition: all ease-in-out 0.5s;
+}
+
+.bs{
+    height: 40px; 
+    width: 40px ;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;   
+    border-radius: 50%;
+}
+
+
+.topnav a {
+    
+    color: #ffc000;
+    float: right;
+  display: block;
+  
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.topnav a:link{
+    text-decoration: none;
+    color:black;
+}
+.topnav a:visited{
+    text-decoration: none;
+    color: black;
+}
+.topnav a:hover{
+   text-decoration: none;
+   color: black;
+   
+}
+.topnav a:active {
+  text-decoration: none;
+  color: black;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+a button{
+    background: #000;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+}
+
+a button:hover{
+    background:#ffc000;
+    color: black;
+    transition: all ease-in-out 0.5s;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: fixed;overflow: hidden}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    
+  }
+}
+.bs{
+    background: white;
+}
+
+/*sidebar*/
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  z-index: 101;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+ 
+.sidebar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 80px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: 101;
+    transition:all ease-in-out 2s;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 500px) {
+ .sidebar {
+    
+    transition:opacity .2s linear, visibility .1s, width 1s ease-in;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    z-index: 101;
+    background: black;
+    left: 0;
+    top: 0;
+   transform: translateX(50);
+   transition: transform .2s;
+  }
+  .sidebar a {
+    text-align: center;
+    float: none;
+    color: #ffc000;
+  }
+  .sidebar:hover{
+    color: white;
+  }
+}
+
+/*HOME*/
+
+.home{
+    padding-top: 50px;
+    height:auto;
+    width: 100%;
+    
+    align-content: center;
+   background: url('img/bg1.jpg') scroll  ;
+   position: relative;
+   overflow: auto;
+}
+
+.b1{    
+    overflow: auto;
+    height: 100%;
+    width: 100%;    
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.img1{
+    height: 200px;
+    width: auto;
+    
+}
+
+.con{
+    height: 60px;
+    width: 60px;
+    right: 20px;
+    bottom: 20px;
+    position: fixed;
+    background: #ffc000;
+    border: 1px #000 solid;
+    z-index: 5;
+    border-radius: 50%;
+}
+
+.img2{
+    height: 100%;
+    width: 100%;
+}
+
+.content{
+    
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-align: center;
+}
+
+.content h1{
+    font-size:  90px;
+    color: #ffffff;
+    font-family: 'Piedra', cursive;
+   
+}
+
+.content h2{
+  color: #ffc000;
+  font-family: 'Give You Glory', cursive;
+  font-size: 50px;
+}
+
+.content h3{
+    right: 0;
+     font-size:  50px;
+    color: #ffc000;
+    font-family: 'Special Elite', cursive;
+    
+}
+
+@media screen and (max-width: 350px) {
+  .content h1{
+        font-size: 60px;
+        color: white;
+        font-family: 'Piedra', cursive;
+}
+ .img1{
+    height: 150px;
+    width: auto;
+    
+}
+}
+
+@media (max-width: 700px) {
+    .home{
+    
+    height:auto;
+    width: 100%;
+    padding-top: 50px;
+    align-content: center;
+   background: url('img/bg1.jpg')  ;
+   position: relative;
+   overflow: auto;
+}
+
+.b1{ 
+   padding-bottom: 10px;  
+    height: 100%;
+    width: 100%;    
+    background: rgba(0, 0, 0, 0.6);
+}
+    
+    .img1{
+    height: 150px;
+    width: auto;
+    
+}
+    
+    
+    .content h1{
+        font-size: 90px;
+        color: white;
+        font-family: 'Piedra', cursive;
+}
+
+.content{
+    
+    padding-top: 50px;
+    padding-bottom: 0px;
+    text-align: center;
+}
+
+.content h3{
+  padding-top: 60px;
+    right: 0;
+     font-size:  30px;
+    color:#ffc000;
+    
+}
+}
+
+.ss{
+    background-color: #ffc000;
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    background-size: auto 100%;
+  padding-top: 100px;
+  padding-bottom: 100px; 
+  
+}
+
+.ss1{
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background: url('img/ab.png')  ;
+    background-size: contain;
+    
+    
+}
+
+@media(min-width:320px) and (max-width:767px){
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background: url('img/ab1.png')  ;
+    background-size: contain;
+    
+}
+
+.ss2{
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.ss h1{
+  text-align: center;
+  padding: 10px;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+}
+
+
+
+.ss::before {
+    content: "";
+    position: absolute;
+    height: 110px;
+    background: url(img/ssu.png);
+    left: 0;
+    right: 0;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    margin-top: -202px;
+    z-index: 55; }
+    @media (max-width: 1250px) {
+      .ss::before {
+        height: 70px;
+        background-position: top;
+        margin-top: -130px; } }
+    @media (max-width: 1250px) {
+      .fh5co-about-us::before {
+        margin-top: -130px; } }
+  
+
+/*how section*/
+
+#how{
+    background: black;
+    height: auto;
+    background-position: center;
+    background-size: cover;    
+    min-width: 100%;
+    text-align: center;
+}
+
+.row{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-right: 0px;
+    padding-right: 0px;
+}
+
+.col1{
+    width: 35%;
+    margin-left:0px;
+    margin-right:0px;
+    float: left;
+    text-align: center;
+    padding-left: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.col2{
+    width: 31%;
+    margin-left:0px;
+    margin-right:0px;
+    float: left;
+    text-align: center;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.col3{
+    width: 33%;
+    margin-left:0px;
+    margin-right:0px;
+    float: left;
+    text-align: center;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.inner h1{font-family: 'Raleway', sans-serif;
+         color: white;
+}
+
+h4{font-family: 'Raleway', sans-serif;}
+
+
+
+.hh1{font-size: 40px;font-family: 'Raleway', sans-serif;
+color: white}
+@media(min-width:320px) and (max-width:767px){
+    .hh1{font-size: 30px;}
+    .text{
+          padding-left:20px;                                         
+        }
+    .col1{
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 10px;
+    }
+    .col2{
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 10px;
+    }
+    .col3{
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 10px;
+    }
+}
+
+
+#how .inner .div{
+    width:33%;
+    margin-left:5px;
+    margin-right:5px;
+    float: left;
+    text-align: center;
+}
+.card{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    
+}
+
+.card:hover{
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.1);
+    transition: all 1.5s ease-in-out;
+    
+}
+
+.card .in{
+    width:100%;
+    height:100%;
+}
+.inner{
+   padding-bottom:  20px;
+   padding-top: 20px;
+   padding-right: 40px;
+   
+}
+
+
+
+.in:hover img{
+       transform: scale(0.8);
+        padding: 8px;
+     
+}
+.card .in img{
+    border-radius: 50%;
+    width:100%;
+    height:auto;
+    transition: all 1.5s ease;
+}
+
+@media(min-width:320px) and (max-width:767px){
+    
+    .inner{
+        font-size: 20px;
+   padding-bottom:  10px;
+   padding-top: 10px;
+   padding-right: 30px;
+}
+    
+    .card .in img{
+    width:100%;
+    height:auto;
+    transition: all 1.5s ease;
+}
+.card{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 0px;
+    padding-left: 10px;
+}
+
+}
+
+/*Model screen*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2;    
+    width: 100%;
+    height: 100%;
+    overflow: auto;    
+    background-color: rgba(0,0,0,.7);
+    padding-top: 7%;    
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
+
+.content1,
+.content2,
+.content3{
+    
+    align-items: center;
+    background-color: #ffc000;
+    
+    border: 1px solid #888;
+    width: 100%;
+    height: 70vh;
+    padding: 40px 20px;
+    /* padding-top: 30px; */
+}
+
+.content4{
+    align-items: center;
+    background-color: #ffc000;
+    
+    border: 1px solid #888;
+    width: 100%;
+    height: 80vh;
+    padding: 40px 20px;
+    /* padding-top: 30px; */
+}
+
+
+.close1,
+.close2,
+.close3,
+.close4{
+    color: #aaaaaa;
+    float: right;
+    font-weight: bold;
+    font-size: 28px;
+    margin-top: -30px;
+}
+
+.close1:hover,
+.close1:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close2:hover,
+.close2:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close3:hover,
+.close3:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close4:hover,
+.close4:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Responsive and Media Queries */
+
+@media (min-width:2560px) {
+    
+    .content1,
+    .content2,
+    .content3,
+    .content4{
+        padding: 40px;
+    }
+    
+    .close1,
+    .close2,
+    .close3,
+    .close4{
+        font-size: 50px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    
+    .content1,
+    .content2,
+    .content3,
+    .content4{
+        height: 70vh;
+        text-align: center;
+    }
+    
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+    
+    .modal {
+    display: none;
+    position: fixed;
+    z-index: 2;    
+    width: 100%;
+    height: 100%;
+    overflow: auto;    
+    background-color: rgba(0,0,0,.7);
+    padding-top:12%;    
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+    
+    .content1,
+    .content2,
+    .content3,
+    .content4{
+        height: 80vh;
+        text-align: center;
+    }
+    
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+    
+    
+
+    
+    .modal {
+    display: none;
+    position: fixed;
+    z-index: 2;    
+    width: 100%;
+    height: 100%;
+    overflow: auto;    
+    background-color: rgba(0,0,0,.7);
+    padding-top: 14%;    
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+    
+       
+    .content3{
+        height:70vh;
+        text-align: center;
+    }
+    
+    .content1, 
+    .content2{
+        height:auto;
+    }
+
+    .content4{
+
+      height: auto;
+    }
+}
+
+/*1st modal*/
+.row1{
+    height: 100%;
+    display: block;
+    width: 50%;
+    float: left;
+    margin-right: 0px;
+    padding-right: 0px;
+    
+    
+}
+
+.col11{
+    width: 35%;
+    margin-left:0px;
+    margin-right:0px;
+    float: left;
+    text-align: center;
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+.col21{
+    
+    width: 31%;
+    margin-left:0px;
+    margin-right:0px;
+    float: left;
+    text-align: center;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.col31{
+    
+    width: 31%;
+    margin-left:0px;
+    margin-right:0px;
+    float: left;
+    text-align: center;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.inner1{    
+   padding-bottom:  20px;
+   padding-top: 20px;
+   padding-right: 40px; 
+   
+}
+
+.inner1 h5{
+    font-size: 30px;
+}
+
+.hh1{font-size: 40px;font-family: 'Raleway', sans-serif;}
+
+
+.row22{
+    width: 50%;
+    height: auto;
+    float: right
+}
+
+@media(min-width:320px) and (max-width:767px){
+      
+    .hh1{font-size: 30px;}
+    .text{
+          padding-left:20px;                                         
+        }
+        
+    .row1{
+    height:30%;
+    display: block;
+    width: 100%;
+    float: none;
+    margin-right: 0px;
+    padding-right: 0px;
+    
+    
+}
+.row1 p{
+  text-align: right;
+}
+.row22{
+    height:70;
+    width: 100%;
+    float: none;
+}
+
+.row22 h2{
+    size: 10px;
+}
+
+.row22 p{
+    size: 5px;
+}
+    .col11{
+        
+    margin-left:0px;
+    margin-right:30px;
+    float: left;
+    text-align: center;    
+    padding-top: 0px;
+    padding-bottom: 2px;        
+    width: 100%;
+    padding-left:15 px;
+        
+    }
+    .col21{
+        
+    margin-left:0px;
+    margin-right:0px;
+    float: left;
+    text-align: center;    
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: 100%;
+    padding-left: 15px;
+        
+    }
+    .col31{
+        
+    margin-left:0px;
+    margin-right:0px;
+    float: left;
+    text-align: center;    
+    padding-top: 2px;
+    padding-bottom:0px;
+    width: 100%;
+    padding-left: 10px;
+        
+    }
+}
+
+
+ .inner1 .div{
+    width:31%;
+    margin-left:0px;
+    margin-right:5px;
+    float: left;
+    text-align: center;
+}
+.card5{
+    width: 100%;
+    height: 160px;;
+    overflow: auto;
+    
+}
+.card5 .in1{
+    width:100%;
+    height:100%;
+}
+.inner1{
+   padding-bottom:  20px;
+   padding-top: 20px;
+   padding-right: 40px;
+   
+}
+.card5 .in1:hover img{
+	transform: scale(1.1);
+        padding: 0px;
+               
+}
+
+.card1:hover{
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.1);
+    transition: all 1.5s ease-in-out;
+}
+
+ .card5 .in1 img{
+    width:80px;
+    height:80px;
+    transition: all 1.5s ease;
+    padding: 0px;
+    
+}
+
+.w2{
+    height: auto;
+    width: 100%;
+}
+@media(min-width:320px) and (max-width:767px){
+    .card5 .in1 img{
+    width:80px;
+    height:80px;
+    transition: all 1.5s ease;
+    padding: 0px;
+    
+}
+    
+    .inner1 .div{
+    width:100%;
+    padding-right: 50px;
+    float: left;
+    text-align: center;
+}
+    
+.inner1 h5{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    z-index: 4;
+}
+
+    .inner1{
+        width: 35%;
+   padding-bottom:  20px;
+   padding-top: 0px;
+   padding-right:2%;
+   float: left;
+}
+
+    .w2{
+    height: auto;
+    width: 50%;
+    float: left;
+}
+    .card5 .in1 img{
+    width:50px;
+    height:auto;
+    transition: all 1.5s ease;
+}
+.card5{
+    width: 80%;
+    height: auto;
+    overflow: hidden;
+    padding: 5px;
+}
+
+}
+
+/*rulebook*/
+
+.rulebk{
+    height: 100%;
+    width: 100%;
+    background: #ffffff;   
+        
+}
+
+.rb{
+    padding: 50px 20px 20px 50px;
+    text-align: inherit;
+}
+
+.rb br{
+    padding-bottom: 10px;
+}
+
+#more {display: none;}
+.para{
+	text-align: left;
+	padding-top: 10px;
+    padding-bottom: 0px;
+    margin:10px;
+    font-size:  30px;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+}
+.rulebk{
+  background-color: #ffc000;
+	width: 100%;
+    height: auto;
+    overflow: auto;
+    background-size: auto 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;  
+  padding-right: 10px;
+}
+.heading{
+	font-size: 35px;
+    color: #ffc000;
+    font-family: 'Piedra', cursive;
+    text-align: center;
+}
+.button {
+   margin:0;
+    width:fit-content;
+    height: fit-content;
+    color: #fff;
+    border: 2px solid black;
+    
+    padding:30px 30px;
+    
+    font-weight: bold;
+    border-radius: 0px;
+    transition: color 0.5s;
+    background: black;
+}
+
+
+    
+ button:hover{
+    background: #ffc000 ;
+    color:black;
+}
+
+
+/*lat*/
+.last{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 100%;
+    height: 100%;
+    background: #ffc000;
+    overflow: auto;
+}
+.row6{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-right: 0px;
+    padding-right: 0px;
+}
+
+.col16{
+    width: 45%;
+    margin-left:0px;
+    margin-right:0px;
+    float: left;
+    padding-left: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.col26{
+    width: 45%;
+    margin-left:0px;
+    margin-right:0px;
+    float: left;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.in6 img{
+    height: 200px;
+    width: 200px;
+}
+.inner6 h1{font-family: 'Raleway', sans-serif;}
+
+h4{font-family: 'Raleway', sans-serif;}
+
+h2{font-family: 'Raleway', sans-serif;}
+h4{font-family: 'Raleway', sans-serif;}
+
+.hh1{font-size: 40px;font-family: 'Raleway', sans-serif;}
+@media(min-width:320px) and (max-width:767px){
+    .hh1{font-size: 30px;}
+    .text{
+          padding-left:20px;                                         
+        }
+    .col16{
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 10px;
+    }
+    .col26{
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 10px;
+    }
+    
+}
+
+
+ .inner6 .div{
+    width:31%;
+    margin-left:5px;
+    margin-right:5px;
+    float: left;
+}
+.card6{
+    width: 100%;
+    height: 270px;;
+    overflow: hidden;
+    
+}
+
+.card6:hover{
+    box-shadow: none;
+    transition: all 1.5s ease-in-out;
+    
+}
+
+.card6 .in6{
+    width:100%;
+    height:250px;
+    padding-top: 20px;
+}
+.inner6{
+   padding-bottom:  20px;
+   padding-top: 20px;
+   padding-right: 40px;
+   
+}
+
+
+
+.in6:hover img{
+   box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.1);
+        padding: 8px;
+}
+.card6 .in6 img{
+    width:200px;
+    height:200px;
+    transition: all 1.5s ease;
+}
+
+@media(min-width:320px) and (max-width:767px){
+    
+    .inner6{
+        font-size: 20px;
+   padding-bottom:  10px;
+   padding-top: 10px;
+   padding-right: 40px;
+}
+    
+    .card6 .in6 img{
+    width:200px;
+    height:200px;
+    transition: all 1.5s ease;
+}
+.card6{
+    padding-left: 20px;
+    width: 80%;
+    height: auto;
+    overflow: hidden;
+    padding: 0px;
+}
+
+}
+
+/*contact*/
+
+@media(max-width:600px){
+    
+
+.form-control{
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: none;
+    color: #263238;
+    font-size: 18px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+}
+
+.form-control{
+    text-align: center;
+    width: 300px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: none;
+    color: #263238;
+    font-size: 18px;
+    margin-bottom: 12px;
+    font-family: 'Raleway', sans-serif;
+}
+
+#input{
+    height: 45px;
+}
+
+.content4 button{
+  font-family: 'Raleway', sans-serif;
+    background: black;
+    border-color: transparent;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 0px;
+    margin-top: 10px;
+    color: white;
+    width: 100px;
+}
+
+.content4 button:hover{
+    background-color: aliceblue;
+    color: black;
+    cursor: pointer;
+    transition: all ease-in-out 1s;
+}
